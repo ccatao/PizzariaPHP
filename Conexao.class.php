@@ -3,11 +3,11 @@
 //ela herdará os métodos e atributos do PDO através da palavra-chave extends
 class Conexao extends PDO {
 
-    private $dsn = 'pgsql:host=localhost;port=5432;dbname=agenda';
+    private $dsn = 'mysql:host=localhost;port=5432;dbname=agenda';
     private $user = 'root';
     private $password = '';
     public $handle = null;
-
+    
     function __construct() {
         try {
 //aqui ela retornará o PDO em si, veja que usamos parent::_construct()
